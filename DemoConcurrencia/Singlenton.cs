@@ -10,10 +10,13 @@ namespace DemoConcurrencia
     {
         private static Singlenton instance = null;
         private static readonly object bloqueo = new object();
-        public Singlenton() 
+
+        public string CadenaConexion;
+        public Singlenton()
         {
-            
+            CadenaConexion = " ";
         }
+     
         public static Singlenton Instance
         {
             get
